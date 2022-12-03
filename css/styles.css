@@ -8,14 +8,12 @@
     --button-active-color: #404BBF;
     --cloud-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
-    --header-color-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
-    --team-list-color-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+    --header-color-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
+    --team-list-color-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    --portolio-card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
+
 
 /* ДЕФОЛТНІ СКИДАННЯ */
 
@@ -79,12 +77,12 @@ body {
 
 /* WEBSTUDIO */
 
-/* Header styles */
+/* HEADER STYLES */
 
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
-    box-shadow: var(--header-color-shadow)
+    box-shadow: var(--header-color-shadow);
 }
 
 .page-header-container {
@@ -202,7 +200,11 @@ body {
     background: var(--button-active-color);
 }
 
-/* < !--Section 1 Feature--> */
+/* < !--SECTION 1 FEATURE--> */
+
+.section-feature {
+    padding-top: 120px;
+}
 
 .feature-list {
     display: flex;
@@ -251,7 +253,7 @@ body {
     color: var(--secondary-color);
 }
 
-/* Section 2 What are we doing */
+/* SECTION 2 WHAT ARE WE DOING */
 
 .work {
     display: flex;
@@ -260,7 +262,7 @@ body {
 }
 
 
-/* < !--Section 3 About our team-->*/
+/* < !--SECTION 3 ABOUT OUR TEAM-->*/
 .team {
     background-color: var(--cloud-color);
 }
@@ -293,6 +295,9 @@ body {
 }
 
 .filters-list {
+    padding: 8px 16px;
+    border: 1px solid var(--footer-text-color);
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -315,10 +320,53 @@ body {
     background-color: var(--iris-color);
 }
 
-/* < !--Footer page--> */
+.filters-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin-bottom: 120px;
+
+}
+
+.portfolio-list-card {
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--cloud-color);
+    box-shadow: var(--portolio-card-shadow);
+}
+
+.portfolio-card-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+/* < !--FOOTER PART--> */
+
+.footer .logo-block {
+    display: block;
+    margin-bottom: 16px;
+    margin-right: 0;
+}
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: var(--accent-color);
+}
+
+.footer-size {
+    width: 264px;
 }
 
 .logo-cloud-color {
