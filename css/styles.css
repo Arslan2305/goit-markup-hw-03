@@ -153,7 +153,7 @@ body {
     color: var(--iris-color);
 }
 
-.mail-adress {
+.menu-contact:first-child {
     margin-right: 40px;
 }
 
@@ -325,7 +325,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-top: 96px;
+    padding-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -334,18 +334,25 @@ body {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 
 }
 
 .portfolio-list-card {
-    border-bottom-width: 0.5px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--cloud-color);
     box-shadow: var(--portolio-card-shadow);
 }
 
 .portfolio-card-text {
+    border-left-width: 0.5px;
+    border-left-style: solid;
+    border-left-color: var(--cloud-color);
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--cloud-color);
+    border-right-width: 0.5px;
+    border-right-style: solid;
+    border-right-color: var(--cloud-color);
+
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
